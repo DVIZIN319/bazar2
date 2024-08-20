@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Minha Página</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        table {
+            background-color: rgb(253, 253, 253);
+            width: 100%;
+            margin: 100px auto; /* Centraliza a tabela horizontalmente */
+            border-collapse: collapse;
+            border: 1px solid black; /* Adiciona borda na tabela */
+        }
+
+        th, td {
+            border: 5px solid darkgrey;
+            padding: 5px;
+        }
+
+        th {
+            background-color: rgba(214, 219, 219, 0.674);
+            text-align: center;
+        }
+
+        /* Estilos para os botões */
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .inicio:hover {
+            background-color: #ccc;
+        }
+        .cad_clientes:hover {
+            background-color: #ccc;
+        }
+        .cad_produtos:hover {
+            background-color: #ccc;
+        }
+        .clientes:hover {
+            background-color: #ccc;
+        }
+        .produtos:hover {
+            background-color: #ccc;
+        }
+
+        .container {
+            display:flex; /* Define o layout como flexbox */
+            flex-direction: row; /* Organiza os elementos em linha */
+            border: 5px solid darkgrey;
+            background-color: darkgrey;
+            font-size: 20px;
+            padding: 5px;
+            justify-content:space-around;
+            
+        }
+
+        .inicio {
+            border: 5px solid darkgrey;
+            background-color: darkgrey;
+            font-size: 16px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+        }
+
+        .clientes {
+            border: 5px solid darkgrey;
+            background-color: darkgrey;
+            font-size: 16px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+        }
+        .produtos {
+            border: 5px solid darkgrey;
+            background-color: darkgrey;
+            font-size: 16px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .cad_clientes{
+            border: 5px solid darkgrey;
+            background-color: darkgrey;
+            font-size: 16px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .cad_produtos{
+            border: 5px solid darkgrey;
+            background-color: darkgrey;
+            font-size: 16px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        /*formatação dos cadastor*/
+        .cadastro{
+            display:flex; /* Define o layout como flexbox */
+            flex-direction: row; /* Organiza os elementos em linha */
+            
+            font-size: 20px;
+            padding: 5px;
+            justify-content:space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inicio"><a href="">INICIO</a></div>
+        <div class="clientes"><a href="clientes.php">CLIENTES</a></div>
+        <div class="produtos"><a href="produto.php">PRODUTO</a></div>
+        <div class="cad_clientes"><a href="cadastro_Client.php">CADASTRAR CLIENTE</a></div>
+        <div class="cad_produtos"><a href="cadastro_Prod.php">CADASTRAR PRODUTOS</a></div>
+    </div>
